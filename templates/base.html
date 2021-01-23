@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% block title %}
+        <title>
+            Title
+        </title>
+        {% endblock %}
+        {% block style %}
+        <style>
+            .myclass {
+                color:blue;
+            }
+        </style>
+        {% endblock %}
+        {% block script %}
+        <script Language="javascript">
+            function testFunction() {
+                alert("Javascript Function...");
+            }
+        </script>
+        {% endblock %}
+    </head>
+    <body>
+    {% block body %}
+    {% endblock %}
+    </body>
+</html>

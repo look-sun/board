@@ -122,6 +122,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIS = [
-    os.path.join(BASE_DIR, 'static'),
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # BIPA SORI님께서는 os.path.join(BASE_DIR, 'static') 을 사용하셨지만
+    # 나는 그렇게 했더니 계속 이미지가 불러와지지 않아서 공식문서 참고 후 이렇게 바꾸었다.
+    # 공식문서는위에 있는 howto/static-files/ 이다.
 ]
